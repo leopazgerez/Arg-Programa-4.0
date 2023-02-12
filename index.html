@@ -11,34 +11,86 @@
 <body>
     <!--La p es de parrafo -->
     <p>Hello Word!</p> 
-    <!-- Formatos de titulo -->
-    <h1>Hello Word!</h1>
-    <p>Hello Word! parrafo</p> 
+
+    <p>------------------------------------------------------------------------------</p>
+    
+    <div class="UnorderList">
+        <h1>Lista desordenada</h1> 
     <!-- "ul" Elemento que representa una lista desordenada de elementos, generalmente con vinetas 
     Las vinetas son cambiadas automaticamente para diferenciar-->
     <ul>
         <!-- "li" Elemento que se usa para representar un item de una lista.
         Son parte de una lista desordenada "ul", una lista ordenada "ol" o un menu "menu" -->
+        <!-- TODOS SON ELEMENTOS DE LINEA -->
         <li>Items</li>
             <ul>
                 <li>SubItems</li>
                 <li>SubItems</li>
             </ul>
-        <li>Items</li>
-        <li>Items</li>
-        <li>Items</li>
-        <li>Items</li>
-        <li>Items</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
     </ul>
-    <p>Hello Word! parrafo</p> 
-    <p>Hello Word! parrafo</p> 
-    <h2>Hello Word!</h2>
-    <h3>Hello Word!</h3>
-    <h4>Hello Word!</h4>
-    <h5>Hello Word!</h5>
-    <h6>Hello Word!</h6>
+
+    <p>------------------------------------------------------------------------------</p>
+
+</div>
+    <!-- Formatos de titulo -->
+    <div class= "titulos">
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <h3>Titulo</h3>
+        <h4>Titulo</h4>
+        <h5>Titulo</h5>
+        <h6>Titulo</h6>
+    </div>    
+
+    <p>------------------------------------------------------------------------------</p>
+
+    <!-- Elemento de linea -->
+    <SPAn>--->Ejemplo de elemento de linea<---</SPAn>
+
+    <p>------------------------------------------------------------------------------</p>
+
     <!-- Si hay imagen me muestra SRC y sino ALT -->
-    <img alt="salchicha!" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fstatic.diariofemenino.com%2Fmedia%2F840%2Fc%2F27-bonitos-nombres-para-perros-que-son-tendencia-en-2019-lg.jpg%3Fresize%3D990%252C1320%26ssl%3D1&f=1&nofb=1&ipt=f835b3bed8ae17f3af96e5e5dbf694a959a8c1d028d12bb301b888815c79d107&ipo=images" 
-    height="100"
-    width="100">
+    <div class="image">
+        <h1>Imagen</h1>
+        <img alt="salchicha!" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fstatic.diariofemenino.com%2Fmedia%2F840%2Fc%2F27-bonitos-nombres-para-perros-que-son-tendencia-en-2019-lg.jpg%3Fresize%3D990%252C1320%26ssl%3D1&f=1&nofb=1&ipt=f835b3bed8ae17f3af96e5e5dbf694a959a8c1d028d12bb301b888815c79d107&ipo=images" 
+        height="100"
+        width="100">
+    </div>
+
+    <p>------------------------------------------------------------------------------</p>
+
+    <div class="Form" >
+        <h1>Formulario</h1>
+    <!--Los elementos 'action' y 'method' son los que se utiliza para las redirecciones y envio de datos -->
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Ingresa tu nombre: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <p></p>
+        <div class="form-example">
+          <label for="email">Ingresa tu email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <p></p>
+        <div class="form-example">
+          <input type="submit" value="Registrarse!">
+        </div>
+      </form>
+    </div>
+
+    <div class="Video">
+        <h1>Video</h1>
+        <video src="assets/Screen_Recording_20220915-192745.mp4" 
+        controls
+        type="video/mp4" 
+        height="300"> 
+</video>
+    </div>
+    <body>
 </html>
