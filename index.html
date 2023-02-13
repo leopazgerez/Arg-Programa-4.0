@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=width, initial-scale=1.0">
     <!-- Etiqueta que aparece en la pestania del navegador -->
     <title>Argentina Programa</title> 
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
 <body>
     <!--La p es de parrafo -->
-    <p>Hello Word!</p> 
+    <p class="span">Hello Word!</p> 
 
     <p>------------------------------------------------------------------------------</p>
     
@@ -50,14 +51,14 @@
     <p>------------------------------------------------------------------------------</p>
 
     <!-- Elemento de linea -->
-    <SPAn>--->Ejemplo de elemento de linea<---</SPAn>
+    <SPAn class="span">Ejemplo de elemento de linea</SPAn>
 
     <p>------------------------------------------------------------------------------</p>
 
     <!-- Si hay imagen me muestra SRC y sino ALT -->
     <div class="image">
-        <h1>Imagen</h1>
-        <img alt="salchicha!" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fstatic.diariofemenino.com%2Fmedia%2F840%2Fc%2F27-bonitos-nombres-para-perros-que-son-tendencia-en-2019-lg.jpg%3Fresize%3D990%252C1320%26ssl%3D1&f=1&nofb=1&ipt=f835b3bed8ae17f3af96e5e5dbf694a959a8c1d028d12bb301b888815c79d107&ipo=images" 
+        <h1 class="ImageTitle">Imagen</h1> 
+        <img class="picture" alt="salchicha!" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fstatic.diariofemenino.com%2Fmedia%2F840%2Fc%2F27-bonitos-nombres-para-perros-que-son-tendencia-en-2019-lg.jpg%3Fresize%3D990%252C1320%26ssl%3D1&f=1&nofb=1&ipt=f835b3bed8ae17f3af96e5e5dbf694a959a8c1d028d12bb301b888815c79d107&ipo=images" 
         height="100"
         width="100">
     </div>
@@ -69,7 +70,7 @@
     <!--Los elementos 'action' y 'method' son los que se utiliza para las redirecciones y envio de datos -->
     <form action="" method="get" class="form-example">
         <div class="form-example">
-          <label for="name">Ingresa tu nombre: </label>
+          <label for="name" id="labelName">Ingresa tu nombre: </label>
           <input type="text" name="name" id="name" required>
         </div>
         <p></p>
@@ -87,10 +88,21 @@
     <div class="Video">
         <h1>Video</h1>
         <video src="assets/Screen_Recording_20220915-192745.mp4" 
+        id="video"
         controls
         type="video/mp4" 
         height="300"> 
 </video>
+    </div>
+
+    <div class="Iframe">
+        <h1>Contenido de pagina dentro de otra pagina</h1>
+        <iframe width="560"
+         height="315" 
+         src="https://www.youtube.com/embed/mikBKyvQMw0?start=23" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <body>
 </html>
